@@ -31,7 +31,7 @@ public class ChatClient extends UnicastRemoteObject implements ClientInterface {
 
             String name = args[0];
             String serverIp = args[1];
-            Chat chat = (Chat) java.rmi.Naming.lookup("rmi://" + "179.97.182.16" + "/ChatService");
+            Chat chat = (Chat) java.rmi.Naming.lookup("rmi://" + "192.168.15.12 + "/ChatService");
             ChatClient client = new ChatClient(name, chat);
 
             Scanner scanner = new Scanner(System.in);
